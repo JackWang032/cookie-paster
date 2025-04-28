@@ -51,6 +51,22 @@
       background-color: #f2dede;
       color: #a94442;
     }
+    .cookie-info {
+      margin-top: 15px;
+      padding: 10px;
+      border-radius: 4px;
+      background-color: #e8f4fd;
+      font-size: 13px;
+      display: none;
+    }
+    .cookie-info p {
+      margin: 5px 0;
+    }
+    .divider {
+      height: 1px;
+      background-color: #ddd;
+      margin: 10px 0;
+    }
   </style>
 </head>
 <body>
@@ -59,6 +75,8 @@
     <button id="copyBtn" class="btn copy-btn">复制当前网站的 Cookies</button>
     <button id="pasteBtn" class="btn paste-btn">粘贴 Cookies 到当前网站</button>
     <div id="status" class="status"></div>
+    <div class="divider"></div>
+    <div id="cookieInfo" class="cookie-info"></div>
   </div>
   <script src="popup.js"></script>
 </body>
