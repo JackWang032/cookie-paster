@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Cookie Paster</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .btn {
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .copy-btn {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .paste-btn {
+      background-color: #2196F3;
+      color: white;
+    }
+    .btn:hover {
+      opacity: 0.9;
+    }
+    .status {
+      margin-top: 10px;
+      padding: 8px;
+      border-radius: 4px;
+      font-size: 14px;
+      color: #333;
+      background-color: #f1f1f1;
+      min-height: 20px;
+    }
+    .success {
+      background-color: #dff0d8;
+      color: #3c763d;
+    }
+    .error {
+      background-color: #f2dede;
+      color: #a94442;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Cookie 复制粘贴工具</h1>
+    <button id="copyBtn" class="btn copy-btn">复制当前网站的 Cookies</button>
+    <button id="pasteBtn" class="btn paste-btn">粘贴 Cookies 到当前网站</button>
+    <div id="status" class="status"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 
